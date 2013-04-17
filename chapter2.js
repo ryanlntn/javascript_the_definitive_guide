@@ -38,7 +38,11 @@
     $str
 
   // Unicode is also allowed
+<<<<<<< HEAD
     var sí = true;
+=======
+    var sí = true;
+>>>>>>> 3315298bebcaf0b01bb61214136eb5f5a41640cc
     var π = 3.14;
 
   // 2.4.1 Reserved Words - Don't use these!
