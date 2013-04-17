@@ -1,4 +1,6 @@
 // Chapter 1
+//
+
 // Anything following double slashes is an English-language comment.
 // Read the comments carefully: they explain the JavaScript code.
 
