@@ -74,6 +74,15 @@
   // Dates and Times are built using the Date() constructor
 
 // Strings
+  // JavaScript uses the UTF-16 character set making JavaScript string sequences of 16 bit values.
 
+  // Literals are enclosed in " " or ' '.
 
-
+// Booleans
+  // The following values convert to, and therefore work like, false:
+    // undefined null
+    // 0
+    // -0
+    // NaN
+    // "" // the empty string
+  // Everything else converts to true.
