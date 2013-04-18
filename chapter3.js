@@ -86,3 +86,6 @@
     // NaN
     // "" // the empty string
   // Everything else converts to true.
+
+// null and undefined
+
