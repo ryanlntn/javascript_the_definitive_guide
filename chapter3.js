@@ -68,3 +68,12 @@
 
   // Arithmetic in JavaScript does not raise errors in cases of overflow, underflow, or division by zero.
   // Instead Infinity, -Infinity, 0, -0, or NaN are returned.
+
+  // Watch out for floating point errors. Use scaled integers ftw!
+
+  // Dates and Times are built using the Date() constructor
+
+// Strings
+
+
+
