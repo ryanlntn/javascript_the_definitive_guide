@@ -65,3 +65,6 @@
     // Math.log(100)/Math.LN10    // Base 10 logarithm of 100
     // Math.log(512)/Math.LN2     // Base 2 logarithm of 512
     // Math.exp(3)                // Math.E cubed
+
+  // Arithmetic in JavaScript does not raise errors in cases of overflow, underflow, or division by zero.
+  // Instead Infinity, -Infinity, 0, -0, or NaN are returned.
