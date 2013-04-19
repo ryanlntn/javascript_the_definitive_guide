@@ -88,4 +88,31 @@
   // Everything else converts to true.
 
 // null and undefined
+  // null is a language construct used to represent an empty object.
+  // undefined is a global variable that represents an object that doesn't exist.
+  // null == undefined // => true
+  // null === undefined // => false
+  // neither null nor undefined have any properties or methods.
 
+// The Global Object
+  // When the JavaScript interpreter starts (or whenever a web browser loads a new page), it
+  // creates a new global object and gives it an initial set of properties that define:
+    // global properties like undefined, Infinity, and NaN
+    // global functions like isNaN(), parseInt(), and eval()
+    // constructor functions like Date(), RegExp(), String(), Object(), and Array()
+    // global objects like Math and JSON
+  // The initial properties of the global object are not reserved words, but they
+  // deserve to be treated as if they are.
+
+  // In top-level code—JavaScript code that is not part of a function—you can
+  // use the JavaScript keyword this to refer to the global object:
+    // var global = this; // Define a global variable to refer to the global object
+
+  // In client-side JavaScript, the Window object serves as the global object for all
+  // JavaScript code contained in the browser window it represents. This global Window
+  // object has a self-referential window property that can be used instead of this to
+  // refer to the global object. The Window object defines the core global
+  // properties, but it also defines quite a few other globals that are specific to
+  // web browsers and client-side JavaScript.
+
+// Wrapper Objects
