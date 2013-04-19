@@ -154,6 +154,11 @@
 
   // Object-to-boolean conversions are trivial: all objects (including arrays and functions) convert to true.
   // Object-to-string and object-to-number conversions are performed by invoking a method of the object to be converted.
+    // ({x:1, y:2}).toString() // => "[object Object]"
+    // [1,2,3].toString() // => "1,2,3"
+    // (function(x) { f(x); }).toString() // => "function(x) {\n f(x);\n}"
+    // /\d+/g.toString() // => "/\\d+/g"
+    // new Date(2010,0,1).toString() // => "Fri Jan 01 2010 00:00:00 GMT-0800 (PST)"
 
 
 
