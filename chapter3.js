@@ -184,3 +184,16 @@
   // And you can combine variable declaration with variable initialization:
     // var message = "hello";
     // var i = 0, j = 0, k = 0;
+  // Uninitialized variables get the value undefined
+  // JavaScript is dynamically typed.
+
+  // It is legal and harmless to declare a variable more than once with the var statement.
+
+// Variable Scope
+  // Each function has its own scope, including the global object
+  // Variable are properties of the functions they're defined in
+  // Every chunk of Java- Script code (global code or functions) has a scope chain associated
+  // with it. This scope chain is a list or chain of objects that defines the variables
+  // that are “in scope” for that code.
+  // When JavaScript needs to look up the value of a variable x (a process called
+  // variable resolution), it starts by looking at the first object in the chain. (the most local object)
