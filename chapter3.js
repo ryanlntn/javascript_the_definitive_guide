@@ -116,3 +116,8 @@
   // web browsers and client-side JavaScript.
 
 // Wrapper Objects
+  // JavaScript primitives have properties and methods.
+  // Whenever you try to refer to a property of a string
+  // s, JavaScript converts the string value to an object as if by calling new String(s)
+  // null and undefined do not have methods or properties
+  // attempting to call a method on either will result in a TypeError
