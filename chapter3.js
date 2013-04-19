@@ -154,12 +154,33 @@
 
   // Object-to-boolean conversions are trivial: all objects (including arrays and functions) convert to true.
   // Object-to-string and object-to-number conversions are performed by invoking a method of the object to be converted.
-    // ({x:1, y:2}).toString() // => "[object Object]"
-    // [1,2,3].toString() // => "1,2,3"
-    // (function(x) { f(x); }).toString() // => "function(x) {\n f(x);\n}"
-    // /\d+/g.toString() // => "/\\d+/g"
-    // new Date(2010,0,1).toString() // => "Fri Jan 01 2010 00:00:00 GMT-0800 (PST)"
+    // toString()
+      // ({x:1, y:2}).toString() // => "[object Object]"
+      // [1,2,3].toString() // => "1,2,3"
+      // (function(x) { f(x); }).toString() // => "function(x) {\n f(x);\n}"
+      // /\d+/g.toString() // => "/\\d+/g"
+      // new Date(2010,0,1).toString() // => "Fri Jan 01 2010 00:00:00 GMT-0800 (PST)"
+    // valueOf()
+      // var d = new Date(2010, 0, 1); // January 1st, 2010, (Pacific time)
+      // d.valueOf() // => 1262332800000
 
+    // When converting object-to-string JavaScript
+      // call toString() if it exists
+      // if no toString() is found call valueOf()
+      // if neither is found throw TypeError
 
+    // When converting object-to-number JavaScript
+      // call valueOf() if it exists
+      // if no valueOf() is found call toString()
+      // if neither is found throw TypeError
 
-// Both operands convert to numbers before comparing.
+// Variable Declaration
+  // Before you use a variable in a JavaScript program, you should declare it.
+  // Variables are declared with the var keyword, like this:
+    // var i;
+    // var sum;
+  // You can also declare multiple variables with the same var keyword:
+    // var i, sum;
+  // And you can combine variable declaration with variable initialization:
+    // var message = "hello";
+    // var i = 0, j = 0, k = 0;
