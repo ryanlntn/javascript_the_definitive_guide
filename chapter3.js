@@ -121,3 +121,14 @@
   // s, JavaScript converts the string value to an object as if by calling new String(s)
   // null and undefined do not have methods or properties
   // attempting to call a method on either will result in a TypeError
+
+  // strings, numbers, and boolean values behave like objects when you try to read the value of
+  // a property (or method) from them. But if you attempt to set the value of a property, that
+  // attempt is silently ignored: the change is made on a temporary object and does not persist.
+
+// Immutable Primitive Values and Mutable Object References
+  // Primitives are immutable: there is no way to change (or “mutate”) a primitive value.
+  // Primitives are also compared by value: two values are the same only if they have the same value.
+  // Objects are mutable—their values can change.
+  // Objects are not compared by value: two objects are not equal even if they have the same properties and values.
+  // And two arrays are not equal even if they have the same elements in the same order.
