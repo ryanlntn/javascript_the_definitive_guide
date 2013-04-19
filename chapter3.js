@@ -132,3 +132,29 @@
   // Objects are mutable—their values can change.
   // Objects are not compared by value: two objects are not equal even if they have the same properties and values.
   // And two arrays are not equal even if they have the same elements in the same order.
+
+  // Objects are sometimes called reference types to distinguish them from JavaScript’s primitive types.
+  // Using this terminology, object values are references, and we say that objects are compared by
+  // reference: two object values are the same if and only if they refer to the same underlying object.
+
+// Type Conversions
+  // JavaScript is very flexible about the types of values it requires.
+  // Because JavaScript can convert values flexibly, its == equality operator
+  // is also flexible with its notion of equality. All of the following comparisons are true, for example:
+    // null == undefined // These two values are treated as equal.
+    // "0" == 0          // String converts to a number before comparing.
+    // 0 == false "0" == false // Boolean converts to number before comparing.
+  // The if statement converts undefined to false, but the == operator never attempts to convert its operands to booleans.
+
+  // The simplest way to perform an explicit type conversion is to use the Boolean(), Number(), String(), or Object() functions.
+
+  // The toString() may also be used for converting to string.
+  // toFixed(), toExponential() and toPrecision() methods may be used to manipulate numbers
+  // The global functions parseInt() and parseFloat() are more flexible when converting to number.
+
+  // Object-to-boolean conversions are trivial: all objects (including arrays and functions) convert to true.
+  // Object-to-string and object-to-number conversions are performed by invoking a method of the object to be converted.
+
+
+
+// Both operands convert to numbers before comparing.
