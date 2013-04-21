@@ -97,7 +97,7 @@
   // Unary operators +, -, ++, and -- always convert to a number
 
 // Relational Expressions
-  // These operators test for a re- lationship (such as “equals,” “less than,” or “property of”) between two values
+  // These operators test for a relationship (such as “equals,” “less than,” or “property of”) between two values
   // and return true or false depending on whether that relationship exists.
 
   // JavaScript uses =, ==, and === operators
@@ -131,3 +131,59 @@
     a instanceof Array;     // Evaluates to true; a is an array
     a instanceof Object;    // Evaluates to true; all arrays are objects
     a instanceof RegExp;    // Evaluates to false; arrays are not regular expressions
+
+// Logical Expressions
+  // The logical operators &&, ||, and ! perform Boolean algebra and are often used in conjunction with the
+  // relational operators to combine two relational expressions into one more complex expression.
+    x == 0 && y == 0 // true if, and only if x and y are both 0
+    var o = { x : 1 };
+    var p = null;
+    o && o.x // => 1: o is truthy, so return value of o.x
+    p && p.x // => null: p is falsy, so return it and don't evaluate p.x
+
+  // The behavior of && is sometimes called “short circuiting,” and you may sometimes see code
+  // that purposely exploits this behavior to conditionally execute code. For example, the
+  // following two lines of JavaScript code have equivalent effects:
+    if (a == b) stop(); // Invoke stop() only if a == b
+    (a == b) && stop(); // This does the same thing
+
+  // An idiomatic usage of the || operator is to select the first truthy value in a set of alternatives:
+    // If max_width is defined, use that. Otherwise look for a value in
+    // the preferences object. If that is not defined use a hard-coded constant.
+    var max = max_width || preferences.max_width || 500;
+
+    // This idiom is often used in function bodies to supply default values for parameters:
+      // Copy the properties of o to p, and return p
+      function copy(o, p) {
+        p = p || {}; // If no object passed for p, use a newly created object.
+        // function body goes here
+      }
+
+// Assignment Expressions
+  // JavaScript uses the = operator to assign a value to a variable or property.
+  i = 0 // Set the variable i to 0.
+  o.x = 1 // Set the property x of object o to 1.
+
+// Assignment with Operation
+  // JavaScript also has +=, -=, *=, /=, %=, <<= , >>=, >>>=, &=, |=, ^= operators
+
+// Evaluation Expressions
+  // Like many interpreted languages, JavaScript has the ability to interpret strings of
+  // JavaScript source code, evaluating them to produce a value. JavaScript does this with
+  // the global function eval():
+  eval("3+2") // => 5
+
+  // eval() should have been an operator but it's a function
+  // eval() expects one argument. If you pass any value other than a string, it simply returns
+  // that value. If you pass a string, it attempts to parse the string as JavaScript code, throwing a SyntaxError if it fails.
+
+  // Strict eval()
+    // using "strict mode" makes eval more operator like and causes it to do a local eval with a private variable environment
+
+// Miscellaneous Operators
+  // The Conditional (ternary) Operator (?:)
+    x > 0 ? x : -x // The absolute value of x
+  // The typeof Operator
+    // typeof is a unary operator that is placed before its single operand, which can be of any type.
+    // Its value is a string that specifies the type of the operand.
+
