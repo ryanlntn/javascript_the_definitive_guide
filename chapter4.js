@@ -26,3 +26,15 @@
     i // Evaluates to the value of the variable i.
     sum // Evaluates to the value of the variable sum.
     undefined // undefined is a global variable, not a keyword like null.
+
+// Object and Array Initializers
+  // Object and array initializers are expressions whose value is a newly created object
+  // or array. These initializer expressions are sometimes called “object literals” and “array literals.”
+
+  // Array
+    []        // An empty array: no expressions inside brackets means no elements
+    [1+2,3+4] // A 2-element array. First element is 3, second is 7
+    [[1,2,3], [4,5,6], [7,8,9]] // A matrix/multi-demensional array
+    [1,,,,5]  // An array with undefined elements in it
+
+  // Object
