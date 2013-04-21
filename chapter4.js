@@ -97,3 +97,12 @@
   // Unary operators +, -, ++, and -- always convert to a number
 
 // Relational Expressions
+  // These operators test for a re- lationship (such as “equals,” “less than,” or “property of”) between two values
+  // and return true or false depending on whether that relationship exists.
+
+  // JavaScript uses =, ==, and === operators
+    = // the assignment operator
+    == // the equality operator
+    === // the strict equality (i.e. 'identity') operator
+
+  // we also have != and !== which are the exact opposite of == and === respectively
