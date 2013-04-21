@@ -106,3 +106,19 @@
     === // the strict equality (i.e. 'identity') operator
 
   // we also have != and !== which are the exact opposite of == and === respectively
+  // == will perform type conversions before checking for equality while === will not
+
+  // JavaScript also has Comparison Operators (>,<,<=,>=)
+    // The operands of these comparison operators may be of any type. Comparison can be performed only
+    // on numbers and strings, however, so operands that are not numbers or strings are converted.
+
+  // The in Operator
+    var point = { x:1, y:1 }; // Define an object
+    "x" in point // => true: object has property named "x"
+    "z" in point // => false: object has no "z" property.
+    "toString" in point // => true: object inherits toString method
+    var data = [7,8,9]; // An array with elements 0, 1, and 2
+    "0" in data // => true: array has an element "0"
+    1 in data // => true: numbers are converted to strings
+    3 in data // => false: no element 3
+
