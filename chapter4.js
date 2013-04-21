@@ -38,3 +38,10 @@
     [1,,,,5]  // An array with undefined elements in it
 
   // Object
+    var p = { x:2.3, y:-1.2 }; // An object with 2 properties
+    var q = {}; // An empty object with no properties q.x = 2.3;
+    q.y = -1.2; // Now q has the same properties as p
+    var rectangle = { upperLeft: { x: 2, y: 2 }, lowerRight: { x: 4, y: 5 } }; // Nested
+    var side = 1;
+    var square = { "upperLeft": { x: p.x, y: p.y },
+                  'lowerRight': { x: p.x + side, y: p.y + side }}; // String property names
