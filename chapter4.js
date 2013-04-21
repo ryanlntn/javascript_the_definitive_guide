@@ -68,3 +68,22 @@
   a.sort() // a.sort is the function; there are no arguments.
 
 // Object Creation Expressions
+  // An object creation expression creates a new object and invokes
+  // a function (called a constructor) to initialize the properties of that object.
+
+  new Object()
+  new Point(2,3)
+
+// Operators
+  // Operators are used for JavaScript’s arithmetic expressions, comparison expressions,
+  // logical expressions, assignment expressions, and more.
+
+  // Operators may be urnary, binary, or ternary
+    1++;
+    1 + 1;
+    true ? 1 : 0;
+
+  // Side Effects
+    // Some operators have side effects (e.g. =, ++, --, delete)
+
+
