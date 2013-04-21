@@ -41,3 +41,25 @@
       // function funcname([arg1 [, arg2 [..., argn]]]) {
       //   statements
       // }
+
+    // Unlike statement blocks used with while loops and other statements, a function body
+    // requires curly braces, even if the body consists of only a single statement.
+
+// Conditionals
+  // Conditional statements execute or skip other statements depending on the value of a specified expression.
+
+  // if statement
+    // syntax:
+      // if (expression)
+      //   statement
+
+    // or:
+      // if (expression)
+      //   statement1
+      // else
+      //   statement2
+
+    // Note that the parentheses around the expression are a required part of the syntax for the if statement.
+    // The rule in JavaScript (as in most programming languages) is that by default an else clause is part of the nearest if statement.
+    // Use curly braces to avoid ambiguity.
+
