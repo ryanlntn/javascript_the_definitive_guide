@@ -86,4 +86,14 @@
   // Side Effects
     // Some operators have side effects (e.g. =, ++, --, delete)
 
+  // Precendence
+    // Order of operations applies in order (*, /, %, +, -, =)
 
+  // Associativity
+    // Most binary operators evaluate left to right while urnary and ternary evaluate right to left.
+
+// Arithmetic Expressions
+  // The + operator adds numbers and concatenates strings
+  // Unary operators +, -, ++, and -- always convert to a number
+
+// Relational Expressions
