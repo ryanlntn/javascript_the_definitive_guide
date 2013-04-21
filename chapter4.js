@@ -45,3 +45,26 @@
     var side = 1;
     var square = { "upperLeft": { x: p.x, y: p.y },
                   'lowerRight': { x: p.x + side, y: p.y + side }}; // String property names
+
+// Function Definition Expressions
+  // A function definition expression defines a JavaScript function, and the value of such an
+  // expression is the newly defined function.
+
+  // This function returns the square of the value passed to it.
+  var square = function(x) { return x * x; }
+
+// Property Access Expressions
+  // A property access expression evaluates to the value of an object property or an array element.
+  // JavaScript defines two syntaxes for property access:
+  //
+  // expression . identifier
+  // expression [ expression ]
+
+// Invocation Expressions
+  // An invocation expression is JavaScript’s syntax for calling (or executing) a function or method.
+
+  f(0) // f is the function expression; 0 is the argument expression.
+  Math.max(x,y,z) // Math.max is the function; x, y and z are the arguments.
+  a.sort() // a.sort is the function; there are no arguments.
+
+// Object Creation Expressions
