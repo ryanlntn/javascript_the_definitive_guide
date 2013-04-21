@@ -186,4 +186,12 @@
   // The typeof Operator
     // typeof is a unary operator that is placed before its single operand, which can be of any type.
     // Its value is a string that specifies the type of the operand.
-
+  // The delete Operator
+    // delete is a unary operator that attempts to delete the object property or array element specified as its operand.
+  // The void Operator
+    // void is a unary operator that appears before its single operand, which may be of any type. This operator is unusual and
+    // infrequently used: it evaluates its operand, then discards the value and returns undefined.
+  // The Comma Operator (,)
+    // The comma operator is a binary operator whose operands may be of any type. It eval- uates its left operand, evaluates
+    // its right operand, and then returns the value of the right operand.
+    // The only situation in which the comma operator is commonly used is with a for loop that has multiple loop variables
