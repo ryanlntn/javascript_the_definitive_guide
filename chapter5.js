@@ -24,3 +24,20 @@
     ;
 
 // Declaration Statements
+  // The var and function are declaration statements—they declare or define variables and functions.
+
+  // var
+    // The var statement declares a variable or variables. Here’s the syntax:
+      // var name_1 [ = value_1] [ ,..., name_n [= value_n]]
+
+    // If a var statement appears within the body of a function, it defines local variables, scoped to that function.
+    // When var is used in top-level code, it declares global variables, visible throughout the JavaScript program.
+
+    // Note that it is harmless to declare the same variable multiple times.
+
+  // function
+    // The function keyword is used to define functions.
+    // A function declaration statement has the following syntax:
+      // function funcname([arg1 [, arg2 [..., argn]]]) {
+      //   statements
+      // }
