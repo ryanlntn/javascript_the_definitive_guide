@@ -160,3 +160,53 @@
     // A return statement within a function specifies the value of invocations of that function.
     // Here’s the syntax of the return statement:
       return expression;
+    // A return statement may appear only within the body of a function.
+
+  // throw
+    // An exception is a signal that indicates that some sort of exceptional condition or error has occurred.
+    // To throw an exception is to signal such an error or exceptional condition.
+    // To catch an exception is to handle it
+
+    // The throw statement has the following syntax:
+      throw expression;
+
+  // try/catch/finally
+    // The try/catch/finally statement is JavaScript’s exception handling mechanism.
+    try {
+      // Normally, this code runs from the top of the block to the bottom
+      // without problems. But it can sometimes throw an exception,
+      // either directly, with a throw statement, or indirectly, by calling
+      // a method that throws an exception.
+    }
+    catch (e) {
+      // The statements in this block are executed if, and only if, the try
+      // block throws an exception. These statements can use the local variable
+      // e to refer to the Error object or other value that was thrown.
+      // This block may handle the exception somehow, may ignore the
+      // exception by doing nothing, or may rethrow the exception with throw.
+    }
+    finally {
+      // This block contains statements that are always executed, regardless of
+      // what happens in the try block. They are executed whether the try block terminates:
+      //   1) normally, after reaching the bottom of the block
+      //   2) because of a break, continue, or return statement
+      //   3) with an exception that is handled by a catch clause above
+      //   4) with an uncaught exception that is still propagating
+    }
+
+// Miscellaneous Statements
+  // with
+    // The with statement is used to temporarily extend the scope chain. It has the following syntax:
+      with (object) statement
+    // The with statement is forbidden in strict mode and should be
+    // considered deprecated in non-strict mode: avoid using it whenever possible.
+
+  // debugger
+    // The debugger statement normally does nothing. If, however, a debugger program is available and is
+    // running, then an implementation may (but is not required to) perform some kind of debugging action.
+
+  // “use strict”
+    // "use strict" is a directive introduced in ECMAScript 5. Directives are not statements.
+    // Thepurposeofa"use strict"directiveistoindicatethatthecodethatfollows(inthe script or function) is strict code.
+    // Strict code is executed in strict mode. The strict mode of ECMAScript 5 is a restricted subset of the language that
+    // fixes a few important language deficiencies and provides stronger error checking and increased security.
