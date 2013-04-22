@@ -115,3 +115,48 @@
     // as an expression and makes those expressions an explicit part of the loop syntax:
       // for(initialize ; test ; increment) statement
 
+  // for/in
+    // The for/in statement uses the for keyword, but it is a completely different kind of loop than
+    // the regular for loop. A for/in loop looks like this:
+      // for (variable in object)
+      //   statement
+
+// Jumps
+  // Another category of JavaScript statements are jump statements. As the name implies, these cause the
+  // JavaScript interpreter to jump to a new location in the source code.
+
+  // Labeled Statements
+    // Any statement may be labeled by preceding it with an identifier and a colon:
+      // identifier: statement
+
+    // Example:
+      mainloop: while(token != null) {
+        // Code omitted...
+        continue mainloop; // Jump to the next iteration of the named loop
+        // More code omitted...
+      }
+
+  // break
+    // The break statement, used alone, causes the innermost enclosing loop or switch statement to
+    // exit immediately. Its syntax is simple:
+      break;
+
+    // JavaScript also allows the break keyword to be followed by a statement label (just the
+    // identifier, with no colon):
+      break labelname;
+
+    // You need the labeled form of the break statement when you want to break out of a
+    // statement that is not the nearest enclosing loop or a switch.
+
+  // continue
+    // The continue statement is similar to the break statement. Instead of exiting a loop, however,
+    // continue restarts a loop at the next iteration. The continue statement’s syntax is just as
+    // simple as the break statement’s:
+      continue;
+    // The continue statement can also be used with a label:
+      continue labelname;
+
+  // return
+    // A return statement within a function specifies the value of invocations of that function.
+    // Here’s the syntax of the return statement:
+      return expression;
