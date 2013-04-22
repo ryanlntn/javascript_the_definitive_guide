@@ -63,3 +63,38 @@
     // The rule in JavaScript (as in most programming languages) is that by default an else clause is part of the nearest if statement.
     // Use curly braces to avoid ambiguity.
 
+  // else if
+    // else if is not really a JavaScript statement, but simply a frequently used
+    // programming idiom that results when repeated if/else statements are used
+
+    // Using the else if idiom is preferable to, and more legible than, writing these
+    // statements out in their syntactically equivalent, fully nested form
+
+  // switch
+    // The switch keyword is followed by an expression in parentheses and a block of code in curly braces:
+      // switch(expression) {
+      //   statements
+      // }
+    // for example:
+      switch(n) {
+        case 1: // Start here if n == 1
+          // Execute code block #1.
+          break;
+        case 2: // Start here if n == 2
+          // Execute code block #2.
+          break; // Stop here
+        case 3: // Start here if n == 3
+          // Execute code block #3.
+          break; // Stop here
+        default: // If all else fails start here.
+          // Execute code block #4.
+          break; // Stop here
+      }
+
+
+
+
+
+// Stop here
+// If all else fails...
+// stop here
