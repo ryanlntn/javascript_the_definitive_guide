@@ -91,10 +91,27 @@
           break; // Stop here
       }
 
+// Loops
+  // The looping statements are those that bend that path back upon itself to repeat portions of your code.
+  // JavaScript has four looping statements: while, do/while, for, and for/in.
 
+  // while
+    // Just as the if statement is JavaScript’s basic conditional, the while statement
+    // is JavaScript’s basic loop. It has the following syntax:
+      // while (expression)
+      //   statement
 
+  // do/while
+    // The do/while loop is like a while loop, except that the loop expression is tested at the bottom
+    // of the loop rather than at the top. This means that the body of the loop is always
+    // executed at least once. The syntax is:
+      // do
+      //   statement
+      // while (expression);
 
+  // for
+    // In the for loop, the initialization, the test, and the update are the three
+    // crucial manipulations of a loop variable. The for statement encodes each of these three manipulations
+    // as an expression and makes those expressions an explicit part of the loop syntax:
+      // for(initialize ; test ; increment) statement
 
-// Stop here
-// If all else fails...
-// stop here
