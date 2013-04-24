@@ -63,3 +63,32 @@
     delete x; // SyntaxError in strict mode
     delete this.x; // This works
 
+// Testing Properties
+  // You can test for membership of a property within an object with the in operator,
+  // the hasOwnProperty() and propertyIsEnumerable() methods, or simply by querying the property.
+
+    // in operator
+      var o = { x: 1 }
+      "x" in o; // true: o has an own property "x"
+      "y" in o; // false: o doesn't have a property "y"
+      "toString" in o; // true: o inherits a toString property
+
+    // hasOwnProperty()
+      var o = { x: 1 }
+      o.hasOwnProperty("x"); // true: o has an own property x
+      o.hasOwnProperty("y"); // false: o doesn't have a property y
+      o.hasOwnProperty("toString"); // false: toString is an inherited property
+
+    // propertyIsEnumerable()
+      var o = inherit({ y: 2 });
+      o.x = 1;
+      o.propertyIsEnumerable("x"); // true: o has an own enumerable property x
+      o.propertyIsEnumerable("y"); // false: y is inherited, not own
+      Object.prototype.propertyIsEnumerable("toString"); // false: not enumerable
+
+    // Instead of using the in operator it is often sufficient to simply query the property
+    // and use !== to make sure it is not undefined:
+      var o = { x: 1 }
+      o.x !== undefined; // true: o has a property x
+
+// Enumerating Properties
