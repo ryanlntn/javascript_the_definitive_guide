@@ -205,3 +205,27 @@
                                   });
 
 // Object Attributes
+  // An object’s prototype attribute specifies the object from which it inherits properties.
+  // In ECMAScript 5, you can query the prototype of any object by passing that object to Object.getPrototypeOf().
+  // An object’s class attribute is a string that provides information about the type of the object.
+  function classof(o) {
+    if (o === null) return "Null";
+    if (o === undefined) return "Undefined";
+    return Object.prototype.toString.call(o).slice(8,-1);
+  }
+  // To determine whether an object is extensible, pass it to Object.isExtensible().
+  // To make an object nonextensible, pass it to Object.preventExtensions().
+
+// Serializing Objects
+  // Object serialization is the process of converting an object’s state to a string from which it can later be restored.
+  // ECMAScript 5 provides native functions JSON.stringify() and JSON.parse() to serialize and restore JavaScript objects.
+
+  // JSON syntax is a subset of JavaScript syntax, and it cannot represent all JavaScript values.
+  // Objects, arrays, strings, finite numbers, true, false, and null are supported and can be serialized and restored.
+  // If a property value cannot be serialized, that property is simply omitted from the stringified output.
+
+// Object Methods
+  // The toString() method takes no arguments; it returns a string that somehow represents the value of the object on which it is invoked.
+  // toLocaleString() returns a localized string representation of the object.
+  // the JSON.stringify() method looks for a toJSON() method on any object it is asked to serialize.
+  // The valueOf() method is much like the toString() method, but it is called when JavaScript needs to convert an object to some primitive type other than a string—typically, a number.
