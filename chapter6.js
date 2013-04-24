@@ -167,3 +167,41 @@
       }
       return result;                                // Return the array.
     }
+
+// Property Getters and Setters
+  // The easiest way to define accessor properties is with an extension to the object literal syntax:
+    var o = {
+      // An ordinary data property
+      data_prop: value,
+
+      // An accessor property defined as a pair of functions
+      get accessor_prop() { /* function body here */ },
+      set accessor_prop(value) { /* function body here */ }
+    };
+  // Accessor properties are defined as one or two functions whose name is the same as
+  // the property name, and with the function keyword replaced with get and/or set.
+
+// Property Attributes
+  // The four attributes of a data property are value, writable, enumerable, and configurable.
+  // The four attributes of an accessor property are get, set, enumerable, and configurable.
+
+  // To obtain the property descriptor for a named property of a specified object, call Object.getOwnPropertyDescriptor():
+    // Returns {value: 1, writable:true, enumerable:true, configurable:true}
+    Object.getOwnPropertyDescriptor({x:1}, "x");
+    // Now query the octet property of the random object defined above.
+    // Returns { get: /*func*/, set:undefined, enumerable:true, configurable:true}
+    Object.getOwnPropertyDescriptor(random, "octet");
+    // Returns undefined for inherited properties and properties that don't exist.
+    Object.getOwnPropertyDescriptor({}, "x"); // undefined, no such prop
+    Object.getOwnPropertyDescriptor({}, "toString"); // undefined, inherited
+
+  // To set the attributes of a property, or to create a new property with the specified at- tributes, call Object.defineProperty()
+    var o = {}; // Start with no properties at all
+    // Add a nonenumerable data property x with value 1.
+    Object.defineProperty(o, "x", { value : 1,
+                                    writable: true,
+                                    enumerable: false,
+                                    configurable: true
+                                  });
+
+// Object Attributes
