@@ -56,3 +56,10 @@
     // • o does not have an own property p; o does not inherit a property p with a setter method, and o’s
     //   extensible attribute is false. If p does not already exist on o, and if there is no setter method
     //   to call, then p must be added to o. But if o is not extensible, then no new properties can be defined on it.
+
+// Deleting Properties
+  // In strict mode delete raises a SyntaxError if its operand is an unqualified identifier like x,
+  // and you have to be explicit about the property access:
+    delete x; // SyntaxError in strict mode
+    delete this.x; // This works
+
