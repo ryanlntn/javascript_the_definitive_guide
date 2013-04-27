@@ -84,3 +84,44 @@
     for(var i = 0, len = keys.length; i < len; i++) {
       // loop body remains the same
     }
+
+  // If you want to exclude null, undefined, and nonexistent elements, you can write this:
+    for(var i = 0; i < a.length; i++) {
+      if (!a[i]) continue; // Skip null, undefined, and nonexistent elements
+      // loop body here
+    }
+
+    for(var i = 0; i < a.length; i++) {
+      if (a[i] === undefined) continue; // Skip undefined + nonexistent elements
+      // loop body here
+    }
+
+    for(var i = 0; i < a.length; i++) {
+      if (!(i in a)) continue ; // Skip nonexistent elements
+      // loop body here
+    }
+
+// Multidimensional Arrays
+  // JavaScript does not support true multidimensional arrays, but you can approximate them with arrays of arrays.
+  // Access by using [] multiple times
+
+// Array Methods
+  // join()
+    // The Array.join() method converts all the elements of an array to strings
+    // and concatenates them, returning the resulting string.
+
+  // reverse()
+    // The Array.reverse() method reverses the order of the elements of an array and returns the reversed array.
+
+  // sort()
+    // Array.sort() sorts the elements of an array in place and returns the sorted array.
+
+  // concat()
+    // The Array.concat() method creates and returns a new array that contains the elements of the original array
+    // on which concat() was invoked, followed by each of the arguments to concat().
+
+  // slice()
+    // The Array.slice() method returns a slice, or subarray, of the specified array.
+
+  // splice()
+    // The Array.splice() method is a general-purpose method for inserting or removing elements from an array.
