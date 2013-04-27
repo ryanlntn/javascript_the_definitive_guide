@@ -53,3 +53,34 @@
     a.length = 5;    // Length is 5, but no elements, like new Array(5)
 
 // Adding and Deleting Array Elements
+  // Assigning values to new indexes will add elements to an array.
+    a = [] // Start with an empty array.
+    a[0] = "zero"; // And add elements to it.
+    a[1] = "one";
+
+  // You can also use the push() method to add one or more values to the end of an array:
+    a = []; // Start with an empty array
+    a.push("zero") // Add a value at the end. a = ["zero"]
+    a.push("one", "two") // Add two more values. a = ["zero", "one", "two"]
+
+  // You can use the unshift() method to insert a value at the beginning of an array,
+  // shifting the existing array elements to higher indexes.
+
+  // You can delete array elements with the delete operator, just as you can delete object properties:
+    a = [1,2,3];            // a now has no element at index 1
+    delete a[1];            // => false: no array index 1 is defined
+    1 in a a.length         // => 3: delete does not affect array lengthth
+
+// Iterating Arrays
+  // The most common way to loop through the elements of an array is with a for loop:
+    var keys = Object.keys(o); // Get an array of property names for object o
+    var values = [] // Store matching property values in this array
+    for(var i = 0; i < keys.length; i++) { // For each index in the array
+      var key = keys[i]; // Get the key at that index
+      values[i] = o[key]; // Store the value in the values array
+    }
+
+  // Optomized loop where array length is only called once
+    for(var i = 0, len = keys.length; i < len; i++) {
+      // loop body remains the same
+    }
