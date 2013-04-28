@@ -137,3 +137,43 @@
     // Same as join() method when it is invoked with no arguments.
 
 // ECMAScript 5 Array Methods
+  // ECMAScript 5 defines nine new array methods for iterating, mapping, filtering, testing, reducing, and searching arrays.
+
+  // forEach()
+    // The forEach() method iterates through an array, invoking a function you specify for each element.
+
+  // map()
+    // The map() method passes each element of the array on which it is invoked to the function you specify, and
+    // returns an array containing the values returned by that function.
+
+  // filter()
+    // The filter() method returns an array containing a subset of the elements of the array on which it is invoked.
+    // The function you pass to it should be predicate: a function that returns true or false.
+
+    // Note that filter() skips missing elements in sparse arrays, and that its return value is always dense.
+    // To close the gaps in a sparse array, you can do this:
+      var dense = sparse.filter(function() { return true; });
+
+    // And to close gaps and remove undefined and null elements you can use filter like this:
+      a = a.filter(function(x) { return x !== undefined && x != null; });
+
+  // every() and some()
+    // The every() and some() methods are array predicates: they apply a predicate function you specify to the
+    // elements of the array, and then return true or false.
+
+    // The every() method is like the mathematical “for all” quantifier ∀: it returns true if and only
+    // if your predicate function returns true for all elements in the array
+
+    // The some() method is like the mathematical “there exists” quantifier ∃: it returns true if there exists at
+    // least one element in the array for which the predicate returns true, and returns false if and only if the
+    // predicate returns false for all elements of the array
+
+    // Note also that by mathematical convention, every() returns true and some returns false when invoked on an empty array.
+
+  // reduce(), reduceRight()
+    // The reduce() and reduceRight() methods combine the elements of an array, using the function
+    // you specify, to produce a single value.
+
+    // reduceRight() works just like reduce(), except that it processes the array from highest index
+    // to lowest (right-to-left), rather than from lowest to highest.
+
