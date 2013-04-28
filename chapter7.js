@@ -186,3 +186,19 @@
     // from end to beginning.
 
 // Array Type
+  // The Array.isArray() function can be used to determine if a variable is an array
+
+// Array-Like Objects
+  // JavaScript arrays have some special features that other objects do not have:
+    // • The length property is automatically updated as new elements are added to the list.
+    // • Setting length to a smaller value truncates the array.
+    // • Arrays inherit useful methods from Array.prototype.
+    // • Arrays have a class attribute of “Array”.
+
+  // The Arguments object is an array-like object.
+  // In client-side JavaScript, a number of DOM methods, such as document.getElementsByTagName(), return array-like objects.
+
+// Strings As Arrays
+  // In ECMAScript 5 (and in many recent browser implementations—including IE8— prior to
+  // ECMAScript 5, strings behave like read-only arrays.
+
