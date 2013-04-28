@@ -125,3 +125,15 @@
 
   // splice()
     // The Array.splice() method is a general-purpose method for inserting or removing elements from an array.
+
+  // push() and pop()
+    // The push() and pop() methods allow you to work with arrays as if they were stacks.
+
+  // unshift() and shift()
+    // The unshift() and shift() methods behave much like push() and pop(), except that they insert and remove
+    // elements from the beginning of an array rather than from the end.
+
+  // toString() and toLocaleString()
+    // Same as join() method when it is invoked with no arguments.
+
+// ECMAScript 5 Array Methods
