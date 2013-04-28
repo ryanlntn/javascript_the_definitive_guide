@@ -177,3 +177,12 @@
     // reduceRight() works just like reduce(), except that it processes the array from highest index
     // to lowest (right-to-left), rather than from lowest to highest.
 
+    // Note that neither reduce() nor reduceRight() accepts an optional argument that specifies the this value
+    // on which the reduction function is to be invoked. The optional initial value argument takes its place.
+
+  // indexOf() and lastIndexOf()
+    // indexOf() and lastIndexOf() search an array for an element with a specified value, and return the index of the first
+    // such element found, or –1 if none is found. indexOf() searches the array from beginning to end, and lastIndexOf() searches
+    // from end to beginning.
+
+// Array Type
