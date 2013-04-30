@@ -178,3 +178,23 @@
     // All functions are callable, but not all callable objects are functions.
 
 // Functional Programming
+  // JavaScript is not a functional programming language like Lisp or Haskell, but the fact that JavaScript can manipulate
+  // functions as objects means that we can use functional programming techniques in JavaScript.
+
+  // Processing Arrays with Functions
+
+  // Higher-Order Functions
+    // A higher-order function is a function that operates on functions, taking one or more functions
+    // as arguments and returning a new function.
+
+  // Partial Application of Functions
+    // The bind() method of a function f returns a new function that invokes f in a specified context
+    // and with a specified set of arguments.
+
+// Memoization
+  // We defined a factorial function that cached its previously computed results.
+  // In functional programming, this kind of caching is called memoization.
+
+
+
+
