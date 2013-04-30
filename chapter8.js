@@ -73,3 +73,108 @@
     // Sometimes it's advantageous to except many different types though
 
 // Functions As Values
+  // In JavaScript functions are not only syntax but also values, which means they can be assigned
+  // to variables, stored in the properties of objects or the elements of arrays, passed as arguments to functions, and so on.
+
+  // Defining Your Own Function Properties
+    // Functions are not primitive values in JavaScript, but a specialized kind of object,
+    // which means that functions can have properties.
+
+      // Initialize the counter property of the function object.
+      // Function declarations are hoisted so we really can
+      // do this assignment before the function declaration.
+        uniqueInteger.counter = 0;
+      // This function returns a different integer each time it is called.
+      // It uses a property of itself to remember the next value to be returned.
+        function uniqueInteger() {
+          return uniqueInteger.counter++; // Increment and return counter property
+        }
+
+// Functions As Namespaces
+  // JavaScript has function scope: variables declared within a function are visible throughout
+  // the function (including within nested functions) but do not exist outside of the function.
+
+  // This means that variables can be wrapped in a function to avoid polluting the global namespace.
+
+// Closures
+  // Like most modern programming languages, JavaScript uses lexical scoping. This means that functions are
+  // executed using the variable scope that was in effect when they were defined, not the variable scope that
+  // is in effect when they are invoked.
+
+  // The combination of a function object and a scope (a set of variable bindings) in which the function’s
+  // variables are resolved is called a closure in the computer science literature.
+
+  // The first step to understanding closures is to review the lexical scoping rules for nested functions.
+  // Consider the following code:
+    var scope = "global scope";       // A global variable
+    function checkscope() {
+      var scope = "local scope";      // A local variable
+      function f() { return scope; }  // Return the value in scope here
+      return f();
+    }
+    checkscope()                      // => "local scope"
+
+  // The checkscope() function declares a local variable and then defines and invokes a function that
+  // returns the value of that variable. It should be clear to you why the call to checkscope() returns
+  // “local scope”. Now let’s change the code just slightly. Can you tell what this code will return?
+    var scope = "global scope";         // A global variable
+    function checkscope() {
+      var scope = "local scope";        // A local variable
+      function f() { return scope; }    // Return the value in scope here
+      return f;
+    }
+    checkscope()()                      // What does this return? Spoiler: "local scope"!
+
+  // This, in a nutshell, is the surprising and powerful nature of closures: they capture the local
+  // variable (and parameter) bindings of the outer function within which they are defined.
+
+  // Here is how we could rewrite the uniqueInteger() function using closures:
+    var uniqueInteger = (function() { // Define and invoke
+                          var counter = 0; // Private state of function below
+                          return function() { return counter++; };
+                        }());
+
+// Function Properties, Methods, and Constructor
+  // The length Property
+    // This read-only property returns the arity of the function—the number of parameters it declares in its
+    // parameter list, which is usually the number of arguments that the function expects.
+
+  // The prototype property
+    // Every function has a prototype property that refers to an object known as the prototype object.
+    // Every function has a different prototype object.
+
+  // The call() and apply() Methods
+    // call() and apply() allow you to indirectly invoke a function as if it were a method of some other object.
+
+  // The bind() Method
+    // the primary purpose of bind() is to bind a function to an object.
+
+  // The toString() Method
+    // In practice most (but not all) implementations of this toString() meth- od return the complete source code for the function.
+
+  // The Function() Constructor
+    // functions can also be defined with the Function() constructor. For example:
+      var f = new Function("x", "y", "return x*y;");
+
+    // • The Function() constructor allows JavaScript functions to be dynamically created and compiled at runtime.
+    // • The Function() constructor parses the function body and creates a new function object each time it is called.
+    //   If the call to the constructor appears within a loop or within a frequently called function, this process can
+    //   be inefficient. By contrast, nested functions and function definition expressions that appear within loops are
+    //   not recompiled each time they are encountered.
+    // • A last, very important point about the Function() constructor is that the functions it creates do not use
+    //   lexical scoping; instead, they are always compiled as if they were top-level functions, as the following
+    //   code demonstrates:
+      var scope = "global";
+      function constructFunction() {
+        var scope = "local";
+        return new Function("return scope"); // Does not capture the local scope!
+      }
+      // This line returns "global" because the function returned by the
+      // Function() constructor does not use the local scope.
+      constructFunction()(); // => "global"
+
+  // Callable Objects
+    // A callable object is any object that can be invoked in a function invocation expression.
+    // All functions are callable, but not all callable objects are functions.
+
+// Functional Programming
