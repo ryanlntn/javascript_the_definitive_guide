@@ -36,3 +36,40 @@
     // Two of these methods, call() and apply(), invoke the function indirectly.
 
 // Function Arguments and Parameters
+  // JavaScript function definitions do not specify an expected type for the function parameters, and
+  // function invocations do not do any type checking on the argument values you pass. In fact, JavaScript
+  // function invocations do not even check the number of arguments being passed.
+
+  // Optional Parameters
+    // When a function is invoked with fewer arguments than declared parameters, the additional
+    // parameters are set to the undefined value.
+
+    // You can use the || operator in this idiomatic way to set default values for parameters:
+      a = a || [];
+
+  // Variable-Length Argument Lists: The Arguments Object
+    // When a function is invoked with more argument values than there are parameter names, there
+    // is no way to directly refer to the unnamed values.
+    // Instead the Arguments Object (an array-like object)
+
+    // Functions that can accept any number of arguments are called variadic
+    // functions, variable arity functions, or varargs functions.
+
+    // The callee and caller properties
+      // In addition to its array elements, the Arguments object defines callee and caller properties.
+
+  // Using Object Properties As Arguments
+    function easycopy(args) {
+      arraycopy(args.from,
+                args.from_start || 0, // Note default value provided args.to,
+                args.to_start || 0,
+                args.length);
+    }
+    // Here is how you might invoke easycopy(): var a = [1,2,3,4], b = [];
+    easycopy({from: a, to: b, length: 4});
+
+  // Argument Types
+    // Most of the time you should test for argument type even if JavaScript can convert Types
+    // Sometimes it's advantageous to except many different types though
+
+// Functions As Values
