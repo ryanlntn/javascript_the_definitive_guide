@@ -14,3 +14,5 @@
 // Nodes can be traversed like a family tree (i.e. parent, child, sibling, etc.)
 
 // HTML elements consist of a tag name and a set of name/value pairs known as attributes.
+
+// A DocumentFragment is a special kind of Node that serves as a temporary container for other nodes.
